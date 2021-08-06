@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<script type="application/javascript">
+			$(function() {
+				$("#copyright-year").text(new Date().getFullYear());
+			});
+		</script>
+	</head>
 	<body>
 	<div class="footer">
 		<div class="container">
-			<p class="text-muted pull-right" style="margin: 20px 0;">Douglas Chin &copy; 2020</p>
+			<p class="text-muted pull-right" style="margin: 20px 0;">Douglas Chin &copy; <span id="copyright-year">2020</span></p>
 		</div>
 	</div>
 	</body>
